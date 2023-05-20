@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTELERA</title>
+    <link rel="stylesheet" href="fuentes/Montserrat-Regular.ttf">
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+
+    <section id="cartelera">
+
+        <div class="header">
+            <a href="#"><img src="media/menu.png" alt="Icono Menu" onclick="activarMenu()"></a>
+            <a href="#"><img src="media/icon-logo.png" alt="Icono Logo"></a>
+            <a href="#"><img src="media/user.png" alt="Perfil"></a>
+        </div>
+
+
+        <div class="cont-botones">
+            <a href="#" class="active" id="btn-aventuras" onclick="aventuras();">Aventuras</a>
+            <a href="#" id="btn-animadas" onclick="animadas()">Animadas</a>
+            <a href="#" id="btn-dramas" onclick="dramas()">Dramas</a>
+        </div>
+
+
+
+        <div class="cont-caratulas active" id="aventuras">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
+
+            <h3>Estrenos:</h3>
+            <hr class="border">
+
+            <!-- contenedor de tarjetas -->
+            <div class="cont-scroll">
+                <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+            </div>
+
+            <h3>Proximamente:</h3>
+            <hr class="border">
+    
+                <!-- contenedor de tarjetas -->
+            <div class="cont-scroll">
+                <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+            </div>
+
+        </div>
+
+        <div class="cont-caratulas" id="animadas" >
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
+
+                <h3>Estrenos:</h3>
+                <hr class="border">
+                
+                <!-- contenedor de tarjetas -->
+                <div class="cont-scroll">
+                    <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+                    <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                    <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                    <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                </div>
+
+                <h3>Proximamente:</h3>
+                <hr class="border">
+    
+                    <!-- contenedor de tarjetas -->
+                <div class="cont-scroll">
+                    <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                    <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                    <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                    <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>  
+                 </div>
+        </div>
+
+        <div class="cont-caratulas" id="dramas" >
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse accusamus eum ad dolorem!</p>
+
+            <h3>Estrenos:</h3>
+            <hr class="border">
+            
+            <!-- contenedor de tarjetas -->
+            <div class="cont-scroll">
+                <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>
+            </div>
+
+            
+            <h3>Proximamente:</h3>
+            <hr class="border">
+
+                <!-- contenedor de tarjetas -->
+            <div class="cont-scroll">
+                <a href="#" onclick="modal()"><img src="media/barbir.jpeg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/guardianes.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/megalodon.jpg" alt="pelicula"></a>
+                <a href="#" onclick="modal()"><img src="media/mario.jpg" alt="pelicula"></a>  
+             </div>
+
+
+
+        </div>
+
+        <div class="modal" id="modal">
+
+            <img class="img-caratula" src="media/mario.jpg" alt="">
+            <a class="close" href="#" onclick="cerrarM()">X</a>
+            <a class="play" href="#"><img src="media/boton-de-play (1).png" alt="boton de play 1"></a>
+            <h3>Super Mario <br>Bross - La Pelicula.</h3>
+            <hr>
+            <p>Estreno: 06 de abril del 2023</p>
+            <p>Acción, comedia.</p>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ad debitis quibusdam. Quos deleniti voluptatem eum est officiis iste aliquid dicta reprehenderit. Vero beatae aut quo inventore quod esse ducimus.</p>
+
+        </div>
+
+        <div id="menu">
+            <a href="#" class="btn-menu"><img src="media/menu.png" alt="" onclick="activarMenu()"></a>
+            <a href="#">Editar Mi Cuenta</a>
+            <hr>
+            <ul>
+                <li><a href="#">-Home</a></li>
+                <li><a href="#">-Aventuras</a></li>
+                <li><a href="#">-Animadas</a></li>
+                <li><a href="#">-Dramas</a></li>
+                <li><a href="#">-Comedia</a></li>
+                <li><a href="#">-Ficción</a></li>
+                <li><a href="#">-Nacionales</a></li>
+            </ul>
+
+            <a href="index.html">Cerrar Sesion</a>
+        </div>
+        
+    </section>
+
+
+    <script src="js/Main.js"></script>
+</body>
+</html>
